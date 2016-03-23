@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Check in time:</strong>
+  <%= @attendance.check_in_time %>
+</p>
+
+<p>
+  <strong>Check out time:</strong>
+  <%= @attendance.check_out_time %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @attendance.date %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @attendance.note %>
+</p>
+
+<p>
+  <strong>Work place:</strong>
+  <%= @attendance.work_place %>
+</p>
+
+<%= link_to 'Edit', edit_attendance_path(@attendance) %> |
+<%= link_to 'Back', attendances_path %>
